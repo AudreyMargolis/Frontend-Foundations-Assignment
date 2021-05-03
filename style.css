@@ -1,0 +1,277 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+/*content*/
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+.about-content img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.ideas-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ideas-item {
+  padding: 20px;
+  width: 100%;
+  margin-right: 20px;
+}
+.ideas-item img {
+  width: 95%;
+}
+#host {
+  display: flex;
+  flex-direction: column;
+}
+.host-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.host-item img {
+  width: 100%;
+}
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+  text-align: center;
+}
+header nav ul{
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+.form-item {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 20px 40px;
+  margin: 10px 5px;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 1000px)
+{
+  /*Navigation*/
+
+  header {
+    background-color: #ff385c;
+    padding: 20px 20px 0 20px;
+    display: flex;
+  }
+
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 72px;
+    color: #fff;
+    flex: 2;
+  }
+  header nav ul{
+    display: flex;
+  }
+  header nav ul li {
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+    text-decoration: none;
+  }
+  /*content*/
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: medium;
+  }
+  .about-content img {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .ideas-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ideas-item {
+    margin: 0 20px;
+    width: 43%;
+  }
+  .ideas-item img {
+    width: 100%;
+  }
+  #host {
+    display: flex;
+    flex-direction: row;
+  }
+  .host-item {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  .host-item img {
+    width: 100%;
+  }
+
+  /*form */
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form-item {
+    display: flex;
+    flex-direction: column;
+  }
+  form label {
+    font-weight: bold;
+  }
+  
+  form select,
+  form input {
+    margin-bottom: 20px;
+    width: 180px;
+  }
+  
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 0px 40px;
+    margin: 10px 5px;
+  }
+}
