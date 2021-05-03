@@ -166,6 +166,8 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
+  font-size: larger;
+  font-weight: 800;
   padding: 20px;
 }
 
@@ -273,5 +275,12 @@ footer p {
     font-size: 24px;
     padding: 0px 40px;
     margin: 10px 5px;
+  }
+  footer p {
+    color: #fff;
+    text-align: center;
+    font-size: medium;
+    font-weight: auto;
+    padding: 20px;
   }
 }
