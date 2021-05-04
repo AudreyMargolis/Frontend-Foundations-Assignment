@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #fff;
 }
 
 h2 {
@@ -13,7 +14,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 p {
@@ -97,7 +98,7 @@ header {
 }
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px;
   color: #fff;
   text-align: center;
 }
@@ -136,16 +137,18 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 form label {
   font-weight: bold;
+  font-size: medium;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 50%;
+  font-size: small;
 }
 
 form button {
@@ -174,12 +177,24 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 1000px)
 {
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
   /*Navigation*/
 
   header {
     background-color: #ff385c;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 5px 20px;
     display: flex;
+    flex-direction: row;
   }
 
   .logo {
@@ -187,6 +202,8 @@ footer p {
     font-size: 72px;
     color: #fff;
     flex: 2;
+    text-align: left;
+    
   }
   header nav ul{
     display: flex;
@@ -198,7 +215,7 @@ footer p {
 
   header nav ul li a {
     color: #fff;
-    font-size: large;
+    font-size: x-large;
     text-decoration: none;
     padding: 0 20px 0 0;
   }
@@ -215,7 +232,7 @@ footer p {
     font-size: medium;
   }
   .about-content img {
-    width: 50%;
+    width: 25%;
     margin-right: 20px;
   }
   .ideas-content {
